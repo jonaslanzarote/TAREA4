@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información | FitnessPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: AntiqueWhite;">
+
+    <h1 style="font-family: Arial, sans-serif; font-size: 25px; color: brown;">Formulario de Información</h1>
+
+    <form action="formulario.php" method="POST">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="50">
+        <br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required maxlength="8">
+        <br>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" value="anónimo" disabled>
+        <br>
+
+        <label for="nivel">Nivel:</label>
+        <select id="nivel" name="nivel">
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado" selected>Avanzado</option>
+        </select>
+        <br>
+
+        <label for="deseo">Deseo recibir información:</label>
+        <input type="checkbox" id="deseo" name="deseo" checked>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
